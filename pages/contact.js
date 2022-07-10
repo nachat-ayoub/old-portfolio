@@ -1,4 +1,11 @@
+import PrimaryBtn from "../components/PrimaryBtn";
+
 const contact = () => {
+  const HandleSubmit = async (e) => {
+    e.preventDefault();
+    console.log("Submited Contact Form!!");
+  };
+
   return (
     <div className="font-quick text-black w-full h-full py-4 px-2 md:px-12 lg:px-28 flex justify-center items-center flex-col">
       <h1 className="text-4xl text-white font-bold mb-4"> Contact Me 😁 </h1>
@@ -29,6 +36,10 @@ const contact = () => {
           cols="30"
           rows="6"
         ></textarea>
+      </div>
+
+      <div className="w-full flex justify-center items-center mt-5">
+        <PrimaryBtn onclick={HandleSubmit} link={"#Contact"} text={"Submit"} />
       </div>
     </div>
   );

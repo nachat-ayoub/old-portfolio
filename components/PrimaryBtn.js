@@ -1,10 +1,13 @@
 import Link from "next/link";
 
-const PrimaryBtn = ({ link, text, arrow }) => {
+const PrimaryBtn = ({ link, text, arrow, onclick }) => {
   return (
     <div className="relative mb-8">
       <Link href={link}>
-        <a className="px-14 py-3 rounded-[4px] border-2 bg-darkPurple border-darkPurple font-bold text-xl uppercase font-quick">
+        <a
+          onClick={onclick}
+          className="px-14 py-3 rounded-[4px] border-2 bg-darkPurple border-darkPurple font-bold text-xl text-white uppercase font-quick"
+        >
           {text}
         </a>
       </Link>
