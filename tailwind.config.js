@@ -12,6 +12,7 @@ module.exports = {
           "99%": { opacity: "1" },
           "100%": { opacity: "1", visibility: "visible" },
         },
+
         fadeOut: {
           "0%": { opacity: "1", visibility: "visible" },
           "99%": { opacity: "0" },

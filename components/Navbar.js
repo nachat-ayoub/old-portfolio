@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import Link from "next/link";
 // pages icones
 import { RiHome2Line } from "react-icons/ri";
@@ -13,6 +15,8 @@ import {
 } from "react-icons/ri";
 
 const Navbar = () => {
+  const [isNavbarShown, setIsNavbarShown] = useState(false);
+
   const socialLinks = {
     fb: "https://www.facebook.com/profile.php?id=100035944533190",
     twitter: "https://twitter.com/nachatayoub1",
@@ -21,9 +25,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className="h-screen w-24 py-5 px-2 text-center flex flex-col items-center justify-between text-white bg-darkPurple">
+    <nav className="h-screen w-20 md:w-24 py-5 px-2 text-center flex flex-col items-center justify-between text-white bg-darkPurple">
       {/* LOGO */}
-      <div className="font-quick font-bold">
+      <div className="font-quick font-bold hover:text-lightPurple">
         <Link href="/">
           <a className="hover:animate-pulse">
             <div className="tracking-widest">AYOUB</div>
@@ -103,7 +107,7 @@ const Navbar = () => {
         </div>
         {/*  */}
       </div>
-    </div>
+    </nav>
   );
 };
 

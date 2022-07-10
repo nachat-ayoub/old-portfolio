@@ -5,7 +5,7 @@ const Home = () => {
     <div className="py-4 px-8 md:px-12 flex flex-col justify-between">
       <section className="w-full flex justify-between items-center flex-col-reverse md:flex-row md:justify-center">
         <div className="w-full md:w-1/2">
-          <h1 className="text-5xl font-bold mb-8 leading-tight">
+          <h1 className="text-2xl md:text-5xl font-bold mb-8 leading-tight">
             <span className="flex">
               Hi <p className="ml-1 animate-wave">👋</p>,
             </span>

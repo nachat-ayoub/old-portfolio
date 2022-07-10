@@ -2,9 +2,9 @@ import { BsFillPatchQuestionFill } from "react-icons/bs";
 
 const aboutMe = () => {
   return (
-    <div className="font-quick py-4 px-8 md:px-12 h-full flex justify-center flex-col">
+    <div className="font-quick py-4 px-5 md:px-12 h-full flex justify-center flex-col">
       <section className="mb-6">
-        <h2 className="font-bold text-3xl mb-2 flex justify-start items-center">
+        <h2 className="font-bold text-2xl md:text-3xl mb-2 flex justify-start items-center">
           <span className="text-lightPurple">
             <BsFillPatchQuestionFill />
           </span>
@@ -17,7 +17,7 @@ const aboutMe = () => {
         </p>
       </section>
       <section className="mb-6">
-        <h2 className="font-bold text-3xl mb-2 flex justify-start items-center">
+        <h2 className="font-bold text-2xl md:text-3xl mb-2 flex justify-start items-center">
           <span className="text-lightPurple">
             <BsFillPatchQuestionFill />
           </span>
@@ -33,7 +33,7 @@ const aboutMe = () => {
         </p>
       </section>
       <section className="mb-6">
-        <h2 className="font-bold text-3xl mb-2 flex justify-start items-center">
+        <h2 className="font-bold text-2xl md:text-3xl mb-2 flex justify-start items-center">
           <span className="text-lightPurple">
             <BsFillPatchQuestionFill />
           </span>
