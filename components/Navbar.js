@@ -22,10 +22,10 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`h-full w-20 md:w-24 py-5 px-2 text-center flex flex-col items-center justify-between text-white bg-darkPurple`}
+      className={`h-full w-[4.5rem] md:w-24 py-5 px-2 text-center flex flex-col items-center justify-between text-white bg-darkPurple`}
     >
       {/* LOGO */}
-      <div className="font-quick font-bold hover:text-lightPurple">
+      <div className="font-quick font-bold hover:text-lightPurple text-sm md:text-base">
         <Link href="/">
           <a className="hover:animate-pulse">
             <div className="tracking-widest">AYOUB</div>
@@ -34,7 +34,7 @@ const Navbar = () => {
         </Link>
       </div>
       {/* Pages Links */}
-      <div className="text-3xl ">
+      <div className="text-2xl md:text-3xl">
         <div className="p-2 hover:text-Purple hover:animate-bounce">
           <Link href="/">
             <a>
@@ -70,11 +70,11 @@ const Navbar = () => {
       </div>
 
       {/* Social Media Links */}
-      <div className="">
+      <div className="text-base md:text-lg">
         {/*  */}
         <div className="p-1 hover:text-Purple hover:animate-bounce">
           <Link href={socialLinks.linkedin}>
-            <a className="text-lg" target="_blank">
+            <a className="" target="_blank">
               <RiLinkedinFill />
             </a>
           </Link>
@@ -82,7 +82,7 @@ const Navbar = () => {
 
         <div className="p-1 hover:text-Purple hover:animate-bounce">
           <Link href={socialLinks.github}>
-            <a className="text-lg" target="_blank">
+            <a className="" target="_blank">
               <RiGithubFill />
             </a>
           </Link>
@@ -90,7 +90,7 @@ const Navbar = () => {
 
         <div className="p-1 hover:text-Purple hover:animate-bounce">
           <Link href={socialLinks.twitter}>
-            <a className="text-lg" target="_blank">
+            <a className="" target="_blank">
               <RiTwitterFill />
             </a>
           </Link>
@@ -98,7 +98,7 @@ const Navbar = () => {
 
         <div className="p-1 hover:text-Purple hover:animate-bounce">
           <Link href={socialLinks.fb}>
-            <a className="text-lg" target="_blank">
+            <a className="" target="_blank">
               <RiFacebookFill />
             </a>
           </Link>
