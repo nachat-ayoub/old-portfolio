@@ -10,7 +10,7 @@ const Home = () => {
               Hi <p className="ml-1 animate-wave">👋</p>,
             </span>
             <span>my name is Nachat Ayoub, And i am a</span>
-            <span className="text-darkPurple"> full stack web developer.</span>
+            <span className="text-yellow-500"> full stack web developer.</span>
           </h1>
         </div>
         <div className="w-full md:w-1/2">
