@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`h-full w-20 md:w-24 py-5-px-2 text-center flex flex-col items-center justify-between text-white bg-darkPurple`}
+      className={`h-full w-20 md:w-24 py-5 px-2 text-center flex flex-col items-center justify-between text-white bg-darkPurple`}
     >
       {/* LOGO */}
       <div className="font-quick font-bold hover:text-lightPurple">
