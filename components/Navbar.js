@@ -29,7 +29,6 @@ const Navbar = () => {
         <Link href="/">
           <a className="hover:animate-pulse">
             <div className="tracking-widest">AYOUB</div>
-            <div className="">---</div>
             <div className="">NACHAT</div>
           </a>
         </Link>
