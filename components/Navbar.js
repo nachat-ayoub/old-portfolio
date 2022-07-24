@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-
 import Link from "next/link";
 // pages icones
 import { RiHome2Line } from "react-icons/ri";
@@ -15,11 +13,6 @@ import {
 } from "react-icons/ri";
 
 const Navbar = () => {
-  const [navHeight, setNavHeight] = useState("100vh");
-  useEffect(() => {
-    setNavHeight(window.innerHeight + "px");
-  }, []);
-
   const socialLinks = {
     fb: "https://www.facebook.com/profile.php?id=100035944533190",
     twitter: "https://twitter.com/nachatayoub1",
@@ -36,6 +29,7 @@ const Navbar = () => {
         <Link href="/">
           <a className="hover:animate-pulse">
             <div className="tracking-widest">AYOUB</div>
+            <div className="">---</div>
             <div className="">NACHAT</div>
           </a>
         </Link>
