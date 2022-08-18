@@ -6,7 +6,7 @@ const PrimaryBtn = ({ link, text, arrow, onclick }) => {
       <Link href={link}>
         <a
           onClick={onclick}
-          className="px-14 py-3 rounded-[4px] border-2 bg-darkPurple border-darkPurple font-bold text-xl text-white uppercase font-quick"
+          className="px-14 hover:px-10 py-3 rounded-[4px] border-2 bg-darkPurple hover:tracking-wider border-darkPurple font-bold text-xl text-white uppercase font-quick transition-all duration-300"
         >
           {text}
         </a>

@@ -16,7 +16,7 @@ const Navbar = () => {
   const socialLinks = {
     fb: "https://www.facebook.com/profile.php?id=100035944533190",
     twitter: "https://twitter.com/nachatayoub1",
-    github: "https://github.com/venomVV/",
+    github: "https://github.com/nachat-ayoub/",
     linkedin: "https://www.linkedin.com/in/ayoub-nachat-a92012201/",
   };
 
@@ -27,7 +27,7 @@ const Navbar = () => {
       {/* LOGO */}
       <div className="font-quick font-bold hover:text-lightPurple text-sm md:text-base">
         <Link href="/">
-          <a className="hover:animate-pulse">
+          <a className="inline-block hover:animate-wave">
             <div className="tracking-widest">AYOUB</div>
             <div className="">NACHAT</div>
           </a>
@@ -35,7 +35,7 @@ const Navbar = () => {
       </div>
       {/* Pages Links */}
       <div className="text-2xl md:text-3xl">
-        <div className="p-2 hover:text-Purple hover:animate-bounce">
+        <div className="p-2 hover:text-Purple hover:animate-wave transition-all duration-200">
           <Link href="/">
             <a>
               <RiHome2Line />
@@ -43,7 +43,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="p-2 hover:text-Purple hover:animate-bounce">
+        <div className="p-2 hover:text-Purple hover:animate-wave transition-all duration-200">
           <Link href="/about-me">
             <a>
               <BsPerson />
@@ -51,7 +51,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="p-2 hover:text-Purple hover:animate-bounce">
+        <div className="p-2 hover:text-Purple hover:animate-wave transition-all duration-200">
           <Link href="/projects">
             <a>
               <IoEyeOutline />
@@ -59,7 +59,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="p-2 hover:text-Purple hover:animate-bounce">
+        <div className="p-2 hover:text-Purple hover:animate-wave transition-all duration-200">
           <Link href="/contact">
             <a>
               <FiMail />
@@ -72,7 +72,7 @@ const Navbar = () => {
       {/* Social Media Links */}
       <div className="text-base md:text-lg">
         {/*  */}
-        <div className="p-1 hover:text-Purple hover:animate-bounce">
+        <div className="p-1 hover:text-Purple hover:animate-wave transition-all duration-200">
           <Link href={socialLinks.linkedin}>
             <a className="" target="_blank">
               <RiLinkedinFill />
@@ -80,7 +80,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="p-1 hover:text-Purple hover:animate-bounce">
+        <div className="p-1 hover:text-Purple hover:animate-wave transition-all duration-200">
           <Link href={socialLinks.github}>
             <a className="" target="_blank">
               <RiGithubFill />
@@ -88,7 +88,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="p-1 hover:text-Purple hover:animate-bounce">
+        <div className="p-1 hover:text-Purple hover:animate-wave transition-all duration-200">
           <Link href={socialLinks.twitter}>
             <a className="" target="_blank">
               <RiTwitterFill />
@@ -96,7 +96,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="p-1 hover:text-Purple hover:animate-bounce">
+        <div className="p-1 hover:text-Purple hover:animate-wave transition-all duration-200">
           <Link href={socialLinks.fb}>
             <a className="" target="_blank">
               <RiFacebookFill />
