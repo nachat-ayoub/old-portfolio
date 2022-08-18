@@ -32,6 +32,7 @@ export async function getStaticProps({ params: { slug } }) {
 
   return {
     props: { project },
+    revalidate: 60,
   };
 }
 
