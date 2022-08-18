@@ -12,8 +12,12 @@ const ProjectPage = ({ project }) => {
         dangerouslySetInnerHTML={{ __html: project?.content }}
       ></div>
       <div className="mt-10 flex justify-around items-center">
-        <StyledButton href={project?.code_link}>Code Source</StyledButton>
-        <StyledButton href={project?.preview_link}>Live Preview</StyledButton>
+        <StyledButton blank href={project?.code_link}>
+          Code Source
+        </StyledButton>
+        <StyledButton blank href={project?.preview_link}>
+          Live Preview
+        </StyledButton>
       </div>
     </div>
   );
@@ -32,7 +36,7 @@ export async function getStaticProps({ params: { slug } }) {
 
   return {
     props: { project },
-    revalidate: 60,
+    revalidate: 60 * 10,
   };
 }
 

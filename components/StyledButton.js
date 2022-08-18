@@ -1,11 +1,11 @@
 import Link from "next/link";
 
-const StyledButton = ({ href, children }) => {
+const StyledButton = ({ href, children, blank }) => {
   return (
     <div className="mt-4">
       <Link href={href}>
         <a
-          target="_blank"
+          target={blank ? "_blank" : ""}
           className="group inline-block relative px-5 py-2 bg-Purple rounded font-semibold shadow cursor-pointer overflow-hidden"
         >
           <span className="invisible whitespace-nowrap">{children}</span>

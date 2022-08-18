@@ -24,6 +24,6 @@ export async function getStaticProps(context) {
   //   console.log(data);
   return {
     props: { projects: data },
-    revalidate: 60,
+    revalidate: 60 * 10,
   };
 }
