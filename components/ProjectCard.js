@@ -58,10 +58,10 @@ const ProjectCard = ({ project }) => {
 
           <Link href={project.preview_link}>
             <a
+              target={project.preview_link.includes("#") ? "" : "_blank"}
               onClick={() => {
                 project.preview_link.includes("#") && setIsShown(true);
               }}
-              target={project.preview_link.includes("#") ? "" : "_blank"}
             >
               <div className="font-bold text-2xl p-3 rounded-full bg-white text-Purple hover:bg-Purple hover:text-white hover:rotate-[360deg] transition-all duration-500">
                 <BsFillEyeFill />
@@ -80,13 +80,6 @@ const ProjectCard = ({ project }) => {
         <StyledButton href={project?.slug ? "/projects/" + project?.slug : "#"}>
           Read more...
         </StyledButton>
-        {/* <Link href={project?.slug ? "/projects/" + project?.slug : "#"}>
-          <a>
-            <span className="mt-2 hover:animate-wave inline-block cursor-pointer text-sm font-bold rounded-sm bg-Purple px-2.5 py-1.5">
-              
-            </span>
-          </a>
-        </Link> */}
       </div>
     </div>
   );
