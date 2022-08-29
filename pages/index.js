@@ -13,8 +13,8 @@ const Home = () => {
             <span className="text-yellow-500"> full stack web developer.</span>
           </h1>
         </div>
-        <div className="w-full md:w-1/2">
-          <img src="/assets/Coder.png" width="100%" height="100%" />
+        <div className="w-full md:w-1/2 flex justify-end">
+          <img className="object-contain h-[70vh]" src="/assets/Coder.png" />
         </div>
       </section>
       <section className="mt-10 w-full flex justify-center items-center">
