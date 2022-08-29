@@ -25,6 +25,19 @@ const ProjectPage = ({ project }) => {
 
 export default ProjectPage;
 
+export const getStaticPaths = async () => {
+  const {
+    data: { data },
+  } = await axios.get(process.env.API_URL + "/projects?populate=image");
+
+  const paths = data.map(({ attributes: { slug } }) => ({ params: { slug } }));
+
+  return {
+    paths,
+    fallback: true,
+  };
+};
+
 export async function getStaticProps({ params: { slug } }) {
   const {
     data: {
@@ -39,15 +52,3 @@ export async function getStaticProps({ params: { slug } }) {
     revalidate: 60 * 10,
   };
 }
-
-export const getStaticPaths = async () => {
-  const {
-    data: { data },
-  } = await axios.get(process.env.API_URL + "/projects?populate=image");
-
-  const paths = data.map(({ attributes: { slug } }) => ({ params: { slug } }));
-
-  return {
-    paths,
-  };
-};
