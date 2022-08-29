@@ -49,7 +49,7 @@ export const getStaticPaths = async () => {
 
   return {
     paths,
-    fallback: false,
+    fallback: true,
     revalidate: 60 * 10,
   };
 };
